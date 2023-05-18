@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "637924193749",
+    "project_id": "projeto2bimestre-bd0f7",
+    "storage_bucket": "projeto2bimestre-bd0f7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637924193749:android:b62aa40bfbac013f6a795c",
+        "android_client_info": {
+          "package_name": "com.example.projeto2bimestre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637924193749-7sjbccndv030supi4tukf9a0qmjin6cg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa7KnjvgT1zALB6Rn7vY7Gbs_2_D97iKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637924193749-7sjbccndv030supi4tukf9a0qmjin6cg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
