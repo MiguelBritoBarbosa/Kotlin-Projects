@@ -4,6 +4,7 @@ package com.example.projeto2bimestre.actvity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -32,6 +33,11 @@ class LoginActivity : AppCompatActivity() {
         Logar()
     }
 
+    fun abrirCadastro(view: View){
+        var i: Intent = Intent(this, CadastroActvity::class.java)
+        startActivity(i)
+
+    }
     fun Logar(){
         btnLogin.setOnClickListener {
             val email: String = txtEmail.text.toString()

@@ -13,9 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projeto2Bimestre"
         tools:targetApi="31" >
-        <activity
-            android:name=".CadastroActvity"
-            android:exported="false" />
+        <activity android:name=".actvity.CadastroActvity" android:exported="false" />
         <activity
             android:name=".actvity.LoginActivity"
             android:exported="true" >
@@ -25,7 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".actvity.MainActivity" />
+        <activity android:name=".actvity.MainActivity" android:exported="false"/>
     </application>
 
 </manifest>
