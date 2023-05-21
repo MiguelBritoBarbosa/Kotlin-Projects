@@ -62,10 +62,13 @@ class LoginActivity : AppCompatActivity() {
                                     }
                                 }
                         }
+                        val idUsuario = user.uid
+                        Toast.makeText(baseContext, "Logado com sucesso.", Toast.LENGTH_LONG).show()
+                        val Main = Intent(applicationContext, MainActivity::class.java)
+                        Main.putExtra("idUsuario", idUsuario)
+                        startActivity(Main)
+                        finish()
                     }
-                    Toast.makeText(baseContext, "Logado com sucesso.", Toast.LENGTH_LONG).show()
-                    startActivity(Intent(applicationContext, MainActivity::class.java))
-                    finish()
                 } else {
                     Toast.makeText(baseContext, "Erro ao tentar fazer login! Verifique seu Email e Senha.", Toast.LENGTH_LONG).show()
                 }

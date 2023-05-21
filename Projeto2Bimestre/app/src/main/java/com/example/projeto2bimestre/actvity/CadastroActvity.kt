@@ -3,6 +3,7 @@ package com.example.projeto2bimestre.actvity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -32,6 +33,12 @@ class CadastroActvity : AppCompatActivity() {
         Cadastrar()
     }
 
+    fun abrirLogin(view: View){
+        var i: Intent = Intent(this, LoginActivity::class.java)
+        startActivity(i)
+
+    }
+
 
     fun Cadastrar(){
         btnCadastrar.setOnClickListener {
@@ -49,7 +56,9 @@ class CadastroActvity : AppCompatActivity() {
                     val user: FirebaseUser = auth.currentUser!!
                     val idUsuario:String = user.uid
                     Toast.makeText(baseContext, "Usuário Criado com sucesso",Toast.LENGTH_LONG).show()
-                    startActivity(Intent(applicationContext, MainActivity::class.java))
+                    val Main = Intent(applicationContext, MainActivity::class.java)
+                    Main.putExtra("idUsuario", idUsuario)
+                    startActivity(Main)
                     finish()
                 } else {
                     Toast.makeText(baseContext, "Falha ao criar usuário",
